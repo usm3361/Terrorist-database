@@ -1,22 +1,26 @@
 import "./TableRow.css";
-import { v4 as uuidv4 } from "uuid";
+
+const imageUrlDefault = 'terrorist.png'
 
 const TableRow = ({ terrorist }) => {
-  const { name, organization, attacks, status, summary, imageUrl } = terrorist;
+  const { name, organization, attacksCount, status, relationToIsraelSummary, imageUrl } = terrorist;
   return (
-    <div className="TableRow">
+      <>
+          <div className="section1">
+              
       <td className="dataName">
-        <img className="data-img" src={imageUrl} alt="" />
+        <img className="data-img" src={imageUrl || imageUrlDefault} alt="" />
         {name}
       </td>
       <td className="organiz">{organization}</td>
-      <td className="attacks">{attacks}</td>
+      <td className="attacks">{attacksCount}</td>
+          </div>
       <td className="status">{status}</td>
-      <td className="summary">{summary}</td>
-    </div>
+      <td className="summary">{relationToIsraelSummary}</td>
+    </>
   );
 };
 
 export default TableRow;
 
-import "../css/CardStudent.css";
+

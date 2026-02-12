@@ -1,4 +1,4 @@
-export default terrorists =[
+export const terrorists =[
     {
         "name": "Walid Shami",
         "organization": "Black Cedar Brigade",
