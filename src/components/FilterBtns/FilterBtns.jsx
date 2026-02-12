@@ -1,11 +1,11 @@
-import './FilterBtns.css'
+import "./FilterBtns.css";
 
-const FilterBtns = () => {
+const FilterBtns = ({ setInput }) => {
   return (
-    <div>
-      
+    <div className="filters">
+      <input type="search" onChange={(e) => setInput(e.target.value)} />
     </div>
-  )
-}
+  );
+};
 
-export default FilterBtns
+export default FilterBtns;

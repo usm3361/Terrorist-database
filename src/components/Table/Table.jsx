@@ -7,11 +7,9 @@ const Table = ({ terrorists }) => {
     <table>
       <thead>
         <tr>
-          <div className="section-header">
             <th className="table-header" id="name">Name</th>
             <th className="table-header" id="Organization">Organization</th>
           <th className="table-header" id="attacks">Attacks</th>
-          </div>
           <th className="table-header">Status</th>
           <th className="table-header">Summary</th>
         </tr>
